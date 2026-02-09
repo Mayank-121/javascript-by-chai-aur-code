@@ -12,7 +12,7 @@ function sayMyName(){
 
 // function addTwoNumbers(number1, number2){
 
-//     console.log(number1 + number2);
+//     console.log(number1 + number2);         //here if you gona print result it give you undefine bcoz console doesn't returning something.
 // }
 
 function addTwoNumbers(number1, number2){
@@ -28,7 +28,7 @@ const result = addTwoNumbers(3, 5)
 
 
 function loginUserMessage(username = "sam"){
-    if(!username){
+    if(!username){                                   //here !username is used because if username is undefine then don't run the loop.
         console.log("PLease enter a username");
         return
     }
@@ -39,7 +39,7 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1){  //rest operator
     return num1
 }
 
