@@ -1,5 +1,11 @@
 // Dates
 
+//| Syntax       | Returns      | Type   | Can use Date methods? |
+//| ------------ | ------------ | ------ | --------------------- |
+//| `new Date()` | Date object  | object | ✅ Yes                 |
+//| `Date()`     | Date as text | string | ❌ No                  |
+
+
 let myDate = new Date()
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
