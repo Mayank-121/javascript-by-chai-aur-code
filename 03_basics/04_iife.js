@@ -1,5 +1,6 @@
 // Immediately Invoked Function Expressions (IIFE)
-
+//An IIFE creates a private scope:
+//problem name collsion , accidently overwrites. solved by iife
 
 (function chai(){
     // named IIFE
