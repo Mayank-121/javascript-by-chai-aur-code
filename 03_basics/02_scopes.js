@@ -33,9 +33,9 @@ if (true) {
     const username = "hitesh"
     if (username === "hitesh") {
         const website = " youtube"
-        // console.log(username + website);
+        // console.log(username + website);   //this will not  be acessed.
     }
-    // console.log(website);
+    // console.log(website);  //this will not be acessed
 }
 
 // console.log(username);
@@ -52,7 +52,7 @@ function addone(num){
 
 
 
-addTwo(5)
+addTwo(5)                             //this function not be acessed bcoz hmne isko declare krne ke sath-sath jold bhi kr diya hai. it is related to the hosting.
 const addTwo = function(num){
     return num + 2
 }
