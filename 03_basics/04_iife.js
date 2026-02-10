@@ -5,7 +5,7 @@
 (function chai(){
     // named IIFE
     console.log(`DB CONNECTED`);
-})();
+})();                                   //mandatory to give it 
 
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
