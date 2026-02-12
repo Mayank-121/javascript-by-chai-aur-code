@@ -19,6 +19,15 @@
    </div>
 </body>
 <script>
+
+    // EVENT CAPTURING AND EVENT BUBLING.
+    //cpaturing = event goes down the dom tree
+    //target = event hits clicked element 
+    // bubbllng = event  goes back up(default behavior)
+    //use stopPropogation() to stop it
+    
+
+    
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // }
@@ -30,6 +39,10 @@
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('owl').addEventListener('click', function(e){   //this will give you PointerEvent in console. 
+    //     console.log(e);
+    // })
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
@@ -48,7 +61,7 @@
    
     
     document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
+        console.log(e.target.tagName);                                 //element.target give you image tag.
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
             let removeIt = e.target.parentNode
