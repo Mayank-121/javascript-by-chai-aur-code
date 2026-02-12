@@ -12,7 +12,7 @@ console.log("hitesh")
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
-buttons.forEach(function (button) {
+buttons.forEach(function (button) {                 //nodelist pe foreach lga sakte hai but HTMLCollection pr nahi.
   console.log(button);
   button.addEventListener('click', function (e) {
     console.log(e);
