@@ -20,7 +20,7 @@
     const changeMe = setTimeout(changeText, 2000)
 
     document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
+        clearTimeout(changeMe)                                              //clear time out is used to stop the change by setTimeOut.
         console.log("STOPPED")
     })
 </script>
